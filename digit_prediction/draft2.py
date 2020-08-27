@@ -92,3 +92,6 @@ final_result[0:4]
 
 for i in range(0,4):
     plot_figure(x_test.reshape(-1, 28, 28)[i])
+    
+df = pd.DataFrame(final_result)
+df.to_csv('Result.csv')
